@@ -22,7 +22,9 @@ elixir(function(mix) {
         '../bower/bootswatch-dist/css/bootstrap.min.css',
         '../bower/jquery.jscrollpane/jquery.jscrollpane.css',
         '../bower/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css',
-        '../sass/3- layouts/front/style.css'
+        '../sass/3- layouts/front/style.css',
+        '../sass/2- modules/jumbo.css',
+        '../sass/2- modules/sticky_footer.css'
     ]);
 
     mix.copy('resources/assets/bower/bootstrap-sass/assets/fonts/bootstrap/','public/fonts');
@@ -38,28 +40,5 @@ elixir(function(mix) {
         'main.js'
     ]);
 
-/**---------------------------------------------------------------------------------------------------------------------**/
-
-    /**
-     * back (admin pages) sass mix
-     */
-    mix.sass('admin.scss','resources/assets/sass/3- layouts/back/main.css');
-    mix.sass('3- layouts/back/style.sass','resources/assets/sass/3- layouts/back/style.css');
-
-    mix.styles([
-        "../sass/3- layouts/back/main.css",
-        "../bower/admin-lte/dist/css/AdminLTE.css",
-        "../bower/DataTables/media/css/dataTables.bootstrap.min.css",
-        "../bower/summernote/dist/summernote.css",
-        "../sass/3- layouts/back/style.css"
-    ], 'public/css/admin/main.css');
-
-    mix.scripts([
-        "../bower/admin-lte/dist/js/app.js",
-        "../bower/DataTables/media/js/dataTables.bootstrap.js",
-        "../bower/summernote/dist/summernote.js"
-    ], 'public/js/admin/main.js');
-
-
-    mix.version(['public/css/all.css', 'public/js/all.js', 'public/css/admin/main.css','public/js/admin/main.js']);
+    mix.version(['public/css/all.css', 'public/js/all.js']);
 });

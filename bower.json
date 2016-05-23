@@ -18,12 +18,7 @@
     "jquery": "*",
     "jquery-ui": "*",
     "bootstrap-sass": "*",
-    "admin-lte":"*",
     "bootstrap-switch":"~3.3.2",
-    "DataTables":"*",
-    "bootswatch-dist": "slate",
-    "jquery.jscrollpane": "*",
-    "jquery-mousewheel": "*",
-    "summernote":"*"
+    "bootswatch-dist": "flatly"
   }
 }
